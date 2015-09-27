@@ -48,11 +48,15 @@ There are some optional args that you can specify and override the default value
 ***Sample calls:***
 By providing no args, the code will need the data files to be located in the ***data/UCI HAR Dataset*** folder or it will fail to load them.
 
-*run_analysis()*
-    
+```
+run_analysis()
+```
+
 If the files are located in a different folder structure, you can specify that by using dataFolder and dataSubFolder parameters.
-    
-*run_analysis(dataFolder="MyDatFolder", dataSubFolder="MyDataSubfolder")*
+
+```    
+run_analysis(dataFolder="MyDatFolder", dataSubFolder="MyDataSubfolder")*
+```
 
 In case you want the code to take care of downloading and extracting the files you can use:
 
