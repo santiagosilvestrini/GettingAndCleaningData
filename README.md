@@ -2,7 +2,9 @@
 title: "README"
 author: "Santiago Silvestrini"
 date: "September 27, 2015"
-output: html_document
+output:
+  html_document:
+    keep_md: yes
 ---
 
 ## Purpose:
