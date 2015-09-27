@@ -19,11 +19,16 @@ This is to describe my approach fot the Final Project of the course: Getting and
 
 4 From the R Console, load the code as shown below:
 
-    ```source("run_analysis.R")```
+```
+source("run_analysis.R")
+```
 
 5 Call the main function from the console, like this:
 
-    ```run_analysis()```
+```
+run_analysis()
+```
+
 (Check below for a full description of the arguments accepted by this function)
     
 ## Structure of the code:
@@ -41,21 +46,25 @@ There are some optional args that you can specify and override the default value
 (char) ***dataSubFolder***: a subfolder of the previos ***dataFolder*** that holds the project data files. The default values is set to ***UCI HAR Dataset***
 
 ***Sample calls:***
-By poviding no args, the code will need the data files to be located in the data/UCI HAR Dataset folder or it will fail to load them
+By providing no args, the code will need the data files to be located in the ***data/UCI HAR Dataset*** folder or it will fail to load them.
 
-```run_analysis()```
+*run_analysis()*
     
 If the files are located in a different folder structure, you can specify that by using dataFolder and dataSubFolder parameters.
     
-```run_analysis(dataFolder="MyDatFolder", dataSubFolder="MyDataSubfolder")```
+*run_analysis(dataFolder="MyDatFolder", dataSubFolder="MyDataSubfolder")*
 
 In case you want the code to take care of downloading and extracting the files you can use:
 
-```run_analysis(getProjectFiles=TRUE)```
+```
+run_analysis(getProjectFiles=TRUE)
+```
 
 Or just:
 
-```run_analysis(TRUE)```
+```
+run_analysis(TRUE)
+```
 
 As result of the execution you will get an output file containing the tidy dataset at the location specified on the ***dataFolder*** parameter.
 
